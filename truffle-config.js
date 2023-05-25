@@ -64,8 +64,10 @@ module.exports = {
           'https://goerli.infura.io/v3/' + process.env.INFURA_API_KEY
         )
       },
+      networkCheckTimeout: 10000,
+      timeoutBlocks: 200,
       network_id: '5', // eslint-disable-line camelcase
-      // gas: 4465030,
+      skipDryRun: true,
       gasPrice: 10000000000,
     },
     // ropsten: {
